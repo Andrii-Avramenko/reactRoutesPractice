@@ -49,9 +49,6 @@ export const getInvoices = () => {
 
 export const getInvoicesById = (id) => {
   return Promise.resolve(
-    db.invoices.find((invoice) => {
-      invoice.id === id;
-      return invoice;
-    }),
+    db.invoices.find((invoice) => invoice.id === id)
   );
 };
