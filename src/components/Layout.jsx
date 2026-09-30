@@ -1,4 +1,4 @@
-import { AppBar } from "./AppBar"
+import AppBar from "./AppBar"
 import { Box } from "./Box"
 import { Outlet } from "react-router-dom"
 

@@ -3,7 +3,7 @@ import { Box } from "./Box";
 import { useEffect, useState } from "react";
 import { getInvoicesById } from "../api";
 
-export const InvoiceDetails = () => {
+const InvoiceDetails = () => {
   const { invoiceId } = useParams();
   console.log(invoiceId)
   const [invoice, setInvoice] = useState(null);
@@ -28,3 +28,5 @@ export const InvoiceDetails = () => {
     </Box>
   );
 };
+
+export default InvoiceDetails

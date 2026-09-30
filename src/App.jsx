@@ -1,9 +1,10 @@
 import { Route, Routes } from "react-router-dom"
 import { GlobalStyle } from "./components/globalStyle"
 import { Layout } from "./components/Layout"
-import { Sales } from "./pages/Sales"
-import { Invoices } from "./components/Invoices"
-import { InvoiceDetails } from "./components/InvoiceDetails"
+import Sales from "./pages/Sales"
+import Invoices from "./components/Invoices"
+import InvoiceDetails from "./components/InvoiceDetails"
+import Customers from "./pages/Customers"
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
 
           <Route path="reports" element={<div>Reports</div>}/>
           <Route path="feedback" element={<div>Feedback page</div>}/>
-          <Route path="customers" element={<div>Customers</div>}/>
+          <Route path="customers" element={<Customers />}/>
         </Route>
       </Routes>
       <GlobalStyle />
